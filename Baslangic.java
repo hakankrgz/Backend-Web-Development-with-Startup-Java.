@@ -72,8 +72,14 @@ public class Baslangic {
         System.out.println(s);
 
         Scanner girdi = new Scanner(System.in);
-        System.out.print("Bir Değer Giriniz=");
+        System.out.print("Adınız Soyadınız=");
         String metinGirdisi = girdi.nextLine();
-        System.out.printf(metinGirdisi);
+        System.out.println(metinGirdisi);
+
+        Scanner doubleGirdisi = new Scanner(System.in);
+        System.out.print("\",\" Kullanarak Ondalık Sayı Giriniz=");
+        double kulanicigirdisi = doubleGirdisi.nextDouble();
+        System.out.println(doubleGirdisi);
+
     }
 }
