@@ -80,6 +80,5 @@ public class Baslangic {
         System.out.print("\",\" Kullanarak Ondalık Sayı Giriniz=");
         double kulanicigirdisi = doubleGirdisi.nextDouble();
         System.out.println(doubleGirdisi);
-
     }
 }
