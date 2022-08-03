@@ -13,6 +13,8 @@ public class VucutKitleIndeksi {
         kilo=girdi.nextDouble();
 
         indeks= kilo / (boy * boy);
+        String cikti =(indeks<=20) ? "güzel":"kötü";
         System.out.println("Vücut Kitle İndeksiniz: " + indeks);
+
     }
 }
