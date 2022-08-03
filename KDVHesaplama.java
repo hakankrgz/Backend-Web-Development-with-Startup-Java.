@@ -1,5 +1,4 @@
 package Giris;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 public class KDVHesaplama {
     public static void main(String[] args) {
