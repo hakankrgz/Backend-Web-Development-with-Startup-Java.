@@ -14,6 +14,5 @@ public class TaksiMetreHesaplama {
 
         total=(total < 20) ? 20 : total;
         System.out.println("Toplam Tutar: " + total);
-
     }
 }
