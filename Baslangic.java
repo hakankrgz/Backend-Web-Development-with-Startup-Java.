@@ -1,5 +1,7 @@
 package Giris;
+
 import java.util.Scanner;
+
 public class Baslangic {
     public static void main(String[] args) {
         System.out.println("Merhaba Dünya");
@@ -9,7 +11,7 @@ public class Baslangic {
         numberTwo = 2;
         numberThree = 3;
         numberFour = 4;
-        int toplam = numberFour+numberOne+numberThree+numberTwo;
+        int toplam = numberFour + numberOne + numberThree + numberTwo;
         System.out.println(toplam);
 
         byte vByte = 100;
@@ -45,18 +47,18 @@ public class Baslangic {
         String vStrn = "Hello String!";
         System.out.println(vStrn);
 
-        int a=5,b=2;
-        System.out.println(a+b); // +,-,*,/,%,
+        int a = 5, b = 2;
+        System.out.println(a + b); // +,-,*,/,%,
 
         int ab = 7;
         int ba = ab;
         System.out.println(ba);
 
-        int q = 2, w= 3;
-         //w += q; w = w + q
-         //w -= q; w = w - q
-         //w *= q; w = w * q
-         w /= q; //w = w / q
+        int q = 2, w = 3;
+        //w += q; w = w + q
+        //w -= q; w = w - q
+        //w *= q; w = w * q
+        w /= q; //w = w / q
         // w %= q; w = w % q
         System.out.println(w);
 
@@ -68,9 +70,8 @@ public class Baslangic {
         System.out.println(str);
 
         int m = -12, n = -5;
-        int s = m%n;
+        int s = m % n;
         System.out.println(s);
-
         Scanner girdi = new Scanner(System.in);
         System.out.print("Adınız Soyadınız=");
         String metinGirdisi = girdi.nextLine();

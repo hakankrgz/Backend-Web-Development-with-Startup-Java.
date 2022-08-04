@@ -1,5 +1,7 @@
 package Giris;
+
 import java.util.Scanner;
+
 public class KDVHesaplama {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -13,9 +15,9 @@ public class KDVHesaplama {
 
         kdvdahil = kdvtutari + tutar;
 
-        System.out.println("KDV'siz Tutar : "+ tutar);
-        System.out.println("KDV ORANI: "+ kdv);
-        System.out.println("KDV'li Tutar: "+kdvdahil);
-        System.out.println("KDV Tutarı: "+ kdvtutari);
+        System.out.println("KDV'siz Tutar : " + tutar);
+        System.out.println("KDV ORANI: " + kdv);
+        System.out.println("KDV'li Tutar: " + kdvdahil);
+        System.out.println("KDV Tutarı: " + kdvtutari);
     }
 }

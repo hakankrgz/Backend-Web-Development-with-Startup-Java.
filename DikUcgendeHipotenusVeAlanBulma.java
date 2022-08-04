@@ -1,8 +1,10 @@
 package Giris;
+
 import java.util.Scanner;
+
 public class DikUcgendeHipotenusVeAlanBulma {
     public static void main(String[] args) {
-        Scanner girdi= new Scanner(System.in);
+        Scanner girdi = new Scanner(System.in);
 
         double hipotenus, kenar1, kenar2, cevre, yc, alan;
 
@@ -11,12 +13,12 @@ public class DikUcgendeHipotenusVeAlanBulma {
         System.out.print("2. Dik Kenar Uzunluğunu Girin: ");
         kenar2 = girdi.nextDouble();
 
-        hipotenus= Math.sqrt((kenar1*kenar1)+(kenar2*kenar2));
-        cevre=kenar1+kenar2+hipotenus;
+        hipotenus = Math.sqrt((kenar1 * kenar1) + (kenar2 * kenar2));
+        cevre = kenar1 + kenar2 + hipotenus;
 
-        yc= cevre/2;
-        alan=Math.sqrt(yc * (yc-kenar1)*(yc-kenar2)*(yc-hipotenus));
-        System.out.println("Hipotenüs: "+ hipotenus);
-        System.out.println("Alan: "+alan);
+        yc = cevre / 2;
+        alan = Math.sqrt(yc * (yc - kenar1) * (yc - kenar2) * (yc - hipotenus));
+        System.out.println("Hipotenüs: " + hipotenus);
+        System.out.println("Alan: " + alan);
     }
 }
