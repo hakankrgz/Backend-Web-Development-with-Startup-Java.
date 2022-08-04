@@ -81,5 +81,36 @@ public class Baslangic {
         System.out.print("\",\" Kullanarak Ondalık Sayı Giriniz=");
         double kulanicigirdisi = doubleGirdisi.nextDouble();
         System.out.println(doubleGirdisi);
+
+        int points = 75;
+        switch (points) {
+            case 75:
+                ;
+            case 7:
+                System.out.println("Java");
+                break;
+            case 8:
+                ;
+            case 9:
+                System.out.println("101");
+                break;
+            case 10:
+                System.out.println("Patika");
+                break;
+            default:
+                System.out.println("Dev");
+
+
+                float saltRatio = 0.9f;
+                if(saltRatio >= 0.8) {
+                    System.out.println("yüksek derecede tuzlu");
+                }
+                else if(0.5 < saltRatio && saltRatio < 0.8 ) {
+                    System.out.println("orta derecede tuzlu");
+                }
+                else {
+                    System.out.println("düşük derecede tuzlu");
+                }
+        }
     }
 }
