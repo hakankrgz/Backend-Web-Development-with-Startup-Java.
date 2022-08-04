@@ -14,7 +14,6 @@ public class BasitHesapMakinesi {
         System.out.println("1-Toplama\n2-Çıkarma\n3-Çarpma\n4-Bölme");
         System.out.print("Yukarıdan Yapmak İstediğiniz İşlem Numarasını Seçiniz: ");
         select = input.nextInt();
-
         switch (select) {
             case 1:
                 System.out.println("Sonuç: " + (n1 + n2));
