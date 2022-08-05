@@ -2,7 +2,7 @@ package Giris;
 
 import java.util.Scanner;
 
-public class BuyuktenKucugeSayiSiralama {
+public class KucuktenBuyugeSayiSiralama {
     public static void main(String[] args) {
 
 
@@ -19,23 +19,23 @@ public class BuyuktenKucugeSayiSiralama {
         System.out.println("C sayısını girin: ");
         C = inp.nextInt();
 
-        if ((A > B) && (A > C)) {
-            if (B > C) {
-                System.out.println("A>B>C");
+        if ((A < B) && (A < C)) {
+            if (B < C) {
+                System.out.println("A<B<C");
             } else {
-                System.out.println("A>C>B");
+                System.out.println("A<C<B");
             }
-        } else if ((B > A) && (B > C)) {
-            if (A > C) {
-                System.out.println("B>A>C");
+        } else if ((B < A) && (B < C)) {
+            if (A < C) {
+                System.out.println("B<A<C");
             } else {
-                System.out.println("B>C>A");
+                System.out.println("B<C<A");
             }
         } else {
-            if (A > B) {
-                System.out.println("C>A>B");
+            if (A < B) {
+                System.out.println("C<A<B");
             } else {
-                System.out.println("C>B>A");
+                System.out.println("C<B<A");
             }
         }
     }
