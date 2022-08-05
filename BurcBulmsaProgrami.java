@@ -31,7 +31,7 @@ public class BurcBulmsaProgrami {
         if (ay == 1) {
             if ((gun >= 1) && (gun <= 31)) {
                 if (gun <= 21) {
-                    burc="Oğlak";
+                    burc = "Oğlak";
                 } else {
                     System.out.println("Kova");
                 }
