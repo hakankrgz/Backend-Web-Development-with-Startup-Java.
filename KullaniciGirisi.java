@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class KullaniciGirisi {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
-        String newPassword = "";
 
         System.out.println("Kullanıcı Adınız: ");
         String userName = inp.nextLine();
@@ -19,13 +18,19 @@ public class KullaniciGirisi {
             int select = inp.nextInt();
             if (select == 1) {
                 System.out.println("Yeni Parola:");
-                newPassword = inp.nextLine();
-            }
-            if (select == 0) {
-                System.out.println("Sayfayı Yenileyin!");
-            }
-            if (newPassword.equals("ghostman123") && userName.equals("ghostman")) {
-                System.out.println("Giris Başarılı!");
+                String newPassword = inp.next();
+                System.out.println("Parola Güncellendi! Yeni Parola: " + newPassword);
+                System.out.println("Kullanıcı Adınız: ");
+                userName = inp.next();
+                System.out.println("Parola: ");
+                newPassword = inp.next();
+                if (newPassword.equals("ghostman123") && userName.equals("ghostman")) {
+                    System.out.println("Giriş Başarılı!");
+                } else {
+                    System.out.println("Şifre sisteme kayıtlı değil ya da, hatalı giriş yaptınız!");
+                }
+            } else {
+                System.out.println("1'i Seçmediniz. Sayfayı Yenileyin!");
             }
         }
     }
