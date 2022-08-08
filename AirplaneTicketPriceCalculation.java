@@ -5,9 +5,19 @@ import java.util.*;
 public class AirplaneTicketPriceCalculation {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
-    double mesafe =5;
+        double mesafe = 0;
+        double yas = 0;
+        int tip=0;
         System.out.print("KM cinsinden mesafe girin: ");
+
+        try {
             mesafe = inp.nextDouble();
+        } catch (InputMismatchException e) {
+            System.out.println("Lütfen Sadece Sayı Girin!");
+            System.exit(0);
+        } finally {
+            System.out.println("İşlem Devam Ediyor.");
+        }
         double mesafetutari = mesafe * 0.10, yasindirimli, yasindirimi, ciftyonindirimi, ciftyonindirimli;
 
         if (mesafe > 0) {
@@ -15,29 +25,25 @@ public class AirplaneTicketPriceCalculation {
         } else if (mesafe < 0) {
             System.out.println("Hatalı Mesafe Girildi!");
             System.exit(0);
-        } else {
-            System.out.println("Hatalı Giriş Türü!");
-            System.exit(0);
         }
-
         System.out.print("Yaşınızı girin: ");
-        int yas = inp.nextInt();
-
-        if (yas >= 0) {
-
-        } else {
-            System.out.println("Hatalı Yaş Girdiniz!");
+        try {
+            yas = inp.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("Lütfen Sadece Sayı Girin!");
             System.exit(0);
+        } finally {
+            System.out.println("İşlem Devam Ediyor.");
         }
 
         System.out.println("Yolculuk tipi seçin.\n1=>Tek yön.\n2=>Çift yön.");
-        int tip = inp.nextInt();
-
-        if ((tip == 1) || (tip == 2)) {
-
-        } else {
-            System.out.println("Hatalı Girdiniz!");
+        try {
+            tip = inp.nextInt();
+        }catch (InputMismatchException e){
+            System.out.println("Lütfen Sadece Sayı Girin!");
             System.exit(0);
+        }finally {
+            System.out.println("İşlem Devam Ediyor.");
         }
 
         if (((tip == 1) || (tip == 2)) && (yas >= 0) && (mesafe > 0)) {
