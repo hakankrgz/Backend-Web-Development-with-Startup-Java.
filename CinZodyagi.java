@@ -7,7 +7,8 @@ public class CinZodyagi {
         Scanner inp = new Scanner(System.in);
 
         int dogumyili = 0, sonuc;
-        System.out.println("Doğum Yılınızı Girin: ");
+        String burc = "";
+        System.out.print("Doğum Yılınızı Girin: ");
         try {
             dogumyili = inp.nextInt();
         } catch (InputMismatchException e) {
@@ -17,44 +18,45 @@ public class CinZodyagi {
         sonuc = dogumyili % 12;
         switch (sonuc) {
             case 0:
-                System.out.println("Maymun");
+                burc = "Maymun";
                 break;
             case 1:
-                System.out.println("Horoz");
+                burc = "Horoz";
                 break;
             case 2:
-                System.out.println("Köpek");
+                burc = "Köpek";
                 break;
             case 3:
-                System.out.println("Domuz");
+                burc = "Domuz";
                 break;
             case 4:
-                System.out.println("Fare");
+                burc = "Fare";
                 break;
             case 5:
-                System.out.println("Öküz");
+                burc = "Öküz";
                 break;
             case 6:
-                System.out.println("Kaplan");
+                burc = "Kaplan";
                 break;
             case 7:
-                System.out.println("Tavşan");
+                burc = "Tavşan";
                 break;
             case 8:
-                System.out.println("Ejderha");
+                burc = "Ejderha";
                 break;
             case 9:
-                System.out.println("Yılan");
+                burc = "Yılan";
                 break;
             case 10:
-                System.out.println("At");
+                burc = "At";
                 break;
             case 11:
-                System.out.println("Koyun");
+                burc = "Koyun";
                 break;
             default:
                 System.out.println("BİR ŞEYLER TERS GİTTİ :( ");
                 System.exit(0);
         }
+        System.out.println("Çin Zodyağı Burcunuz: " + burc);
     }
 }
