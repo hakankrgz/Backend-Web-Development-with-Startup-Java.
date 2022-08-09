@@ -102,53 +102,48 @@ public class Baslangic {
 
 
                 float saltRatio = 0.9f;
-                if(saltRatio >= 0.8) {
+                if (saltRatio >= 0.8) {
                     System.out.println("yüksek derecede tuzlu");
-                }
-                else if(0.5 < saltRatio && saltRatio < 0.8 ) {
+                } else if (0.5 < saltRatio && saltRatio < 0.8) {
                     System.out.println("orta derecede tuzlu");
-                }
-                else {
+                } else {
                     System.out.println("düşük derecede tuzlu");
                 }
         }
 
         //while döngüsü kaç defa döneceğini bilmediğimiz durumlarda kullanılır
         System.out.println("While Döngüsü");
-        int i=1;
-        while (i<=5){
+        int i = 1;
+        while (i <= 5) {
             System.out.println(i);
             ++i;
         }
-        int d=1, j=1;
 
         //do-while, do'ya en az bir kere girer ve altindaki while karşılanmayana dek döner
         System.out.println("Do-While Döngüsü");
-        while(d<3)
-        {
-            do
-            {
+        int d = 1, j = 1;
+        while (d < 3) {
+            do {
                 System.out.println(j + ",");
                 j++;
-            }while(j<4);
+            } while (j < 4);
             d++;
         }
 
         //for döngüsü kaç defa döneceğini bildiğimiz durumlarda kullanılır
         System.out.println("For Döngüsü");
-        for (int v=0;v<=10;v+=2){
+        for (int v = 0; v <= 10; v += 2) {
             System.out.println(v);
         }
 
         System.out.println("For Döngüsü2");
         int sum = 0;
         for (int o = 0, y = 0; o < 5 || y < 5; ++o, y = o + 1) {
-            System.out.println("y: "+ y);
-            System.out.println("o: "+ o);
-                sum += o;
+            System.out.println("y: " + y);
+            System.out.println("o: " + o);
+            sum += o;
         }
         System.out.println(sum);
-
 
 
     }

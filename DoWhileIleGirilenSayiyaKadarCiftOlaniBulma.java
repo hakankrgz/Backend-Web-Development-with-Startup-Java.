@@ -1,8 +1,9 @@
 package Giris;
 
-import java.util.*;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
-public class WhileIleGirilenSayiyaKadarCiftOlaniBulma {
+public class DoWhileIleGirilenSayiyaKadarCiftOlaniBulma {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
         double sayi = 0;
@@ -13,13 +14,13 @@ public class WhileIleGirilenSayiyaKadarCiftOlaniBulma {
             System.out.println("Geçersiz Değer Girişi!");
             System.exit(0);
         }
-        double i = 1;
-        do {
+        int i=1;
+        while (i <= sayi) {
             if (i % 2 == 0) {
                 System.out.println("Çift Sayı: " + i);
             }
             ++i;
-        } while (i <= sayi);
-        System.out.println("SAYI: " + sayi + "\n İ: " + i);
+        }
+
     }
 }
