@@ -2,7 +2,7 @@ package Giris;
 
 import java.util.Scanner;
 
-public class tekSayiGirileneKadarGirilenCiftSayilariToplayanUygulama {
+public class negatifSayiGirileneKadarGirilenCiftSayilariToplayanUygulama {
     public static void main(String[] args) {
         /*
         Java döngüler ile negatif bir değer girilene kadar kullanıcıdan
