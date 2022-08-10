@@ -10,5 +10,9 @@ public class UsluSayiHesaplama {
         System.out.print("Enter the üs number: ");
         int k = inp.nextInt();
         int total = 1;
+        for (int i = 1; i <= k; i++) {
+            total *= n;
+        }
+        System.out.println(total);
     }
 }
