@@ -1,24 +1,28 @@
 package Giris;
+
 import java.util.Scanner;
+
 public class test {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int number;
+        Scanner klavye = new Scanner(System.in);
+        System.out.println("Bir Sayı Giriniz :");
+        int n = klavye.nextInt();
+        int i = 0;
+        int j = 0;
+        int k = 1;
 
-        System.out.print("Enter a Number : ");
-        number = scanner.nextInt();
-
-        int total = 0, donguSayisi = 0;
-        double ortalama;
-
-        for(int i =0; i<=number; i++){
-            if(i % 3 == 0 && i % 4 == 0 && i>0){
-                total += i;
-                donguSayisi++;
-
+        do {
+            while (j<=(n-i)){
+                System.out.print(" ");
             }
-        }
-        ortalama = total / donguSayisi;
-        System.out.println("0 dan Girilen Sayıya kadar 3 ve 4 e bölünebilen sayıların ortalaması : " +ortalama);
+            j++;
+
+            while (k<=(2*i+1)){
+                System.out.println("*");
+            }
+            k++;
+
+            i++;
+        }while (i==n);
     }
 }
