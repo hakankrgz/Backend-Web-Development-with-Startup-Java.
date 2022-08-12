@@ -84,7 +84,7 @@ public class ATM {
                 System.out.println(" --------------------- ");
                 System.out.println("Geçersiz Değer Girdiniz!");
                 System.out.println(" --------------------- ");
-                break;
+                System.exit(0);
             }
         } while (exit);
     }
