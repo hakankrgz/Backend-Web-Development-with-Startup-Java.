@@ -12,12 +12,17 @@ public class ATM {
         double bakiye = 3200, yatan, cekilen;
         boolean exit = true;
         while (entry > 0) {
+            System.out.println("******************");
             System.out.print("Enter Username: ");
             userName = inp.nextLine();
+            System.out.println("******************");
             System.out.print("Enter Password: ");
             password = inp.nextLine();
             if (userName.equals("hakan03300") && password.equals("1453")) {
-                System.out.println("Kullanıcı Bulundu!\n");
+                System.out.println("||||||||||||||||||||");
+                System.out.println("Kullanıcı Bulundu!");
+                System.out.println("||||||||||||||||||||");
+
                 break;
             } else {
                 System.out.println("Hatalı Giriş!\nKalan Hakkınız: " + --entry + "\n\n");
@@ -27,33 +32,53 @@ public class ATM {
                 System.exit(0);
             }
         }
+        do {
+
             System.out.println("Bakiye Sorgulama => 1\nPara Yatırma => 2\nPara Çekme => 3\nÇıkış => 4");
             System.out.print("Merhaba! Lütfen işlem seçin => ");
-            select = inp.nextInt();
-            do {
-
+                select = inp.nextInt();
                 switch (select) {
                     case 1:
-                        System.out.println("Bakiye: " + bakiye);
+                        System.out.println(" --------------------- ");
+                        System.out.println("   Bakiye: " + bakiye);
+                        System.out.println(" --------------------- ");
                         break;
                     case 2:
-                        System.out.println("Yatırılan Tutar Girin: ");
-                        yatan = inp.nextDouble();
-                        bakiye += yatan;
+                        System.out.print("Yatırılan Tutar Girin: ");
+                        try {
+                            yatan = inp.nextDouble();
+                            bakiye += yatan;
+                        }catch (InputMismatchException e){
+                            System.out.println("Geçersiz Değer Girişi");
+                        }
+                        System.out.println(" --------------------- ");
                         System.out.println("Güncel Bakiye: " + bakiye);
+                        System.out.println(" --------------------- ");
                         break;
                     case 3:
-                        System.out.println("Çekilen Tutar Girin: ");
-                        cekilen = inp.nextDouble();
-                        bakiye -= cekilen;
+                        System.out.print("Çekilen Tutar Girin: ");
+                        try {
+                            cekilen = inp.nextDouble();
+                            bakiye -= cekilen;
+                        }catch (InputMismatchException e){
+                            System.out.println("Geçersiz Değer Girişi");
+                        }
+                        System.out.println(" --------------------- ");
                         System.out.println("Güncel Bakiye: " + bakiye);
+                        System.out.println(" --------------------- ");
                         break;
                     case 4:
-                        System.out.println("Hoşçakal!");
+                        System.out.println(" --------------------- ");
+                        System.out.println("       Hoşçakal!");
+                        System.out.println(" --------------------- ");
+                        exit=false;
                         break;
                     default:
+                        System.out.println(" --------------------- ");
                         System.out.println("Geçersiz Değer Girdiniz!");
+                        System.out.println(" --------------------- ");
+                        break;
                 }
-            }while(select==0);
+        } while (exit);
     }
 }
