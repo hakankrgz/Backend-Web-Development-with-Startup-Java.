@@ -36,6 +36,7 @@ public class ATM {
 
             System.out.println("Bakiye Sorgulama => 1\nPara Yatırma => 2\nPara Çekme => 3\nÇıkış => 4");
             System.out.print("Merhaba! Lütfen işlem seçin => ");
+            try {
                 select = inp.nextInt();
                 switch (select) {
                     case 1:
@@ -79,6 +80,12 @@ public class ATM {
                         System.out.println(" --------------------- ");
                         break;
                 }
+            }catch (InputMismatchException e){
+                System.out.println(" --------------------- ");
+                System.out.println("Geçersiz Değer Girdiniz!");
+                System.out.println(" --------------------- ");
+                break;
+            }
         } while (exit);
     }
 }
