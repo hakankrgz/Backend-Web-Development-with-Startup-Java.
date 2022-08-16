@@ -1,12 +1,14 @@
 package Giris;
+
 public class test {
-    static int basamaklarToplami(int sayi){
-        if (sayi == 0){
-            return 0;
-        }else
-            return sayi % 10 + basamaklarToplami(sayi / 10);
+    static int fib(int n) {
+        if (n == 1 || n == 2) {
+            return 1;
+        }
+        return fib(n - 1) + fib(n - 2);
     }
+
     public static void main(String[] args) {
-        System.out.println("Basamak toplami: "+basamaklarToplami(45612));
+        System.out.println(fib(5));
     }
 }
