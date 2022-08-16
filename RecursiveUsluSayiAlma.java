@@ -3,21 +3,27 @@ package Giris;
 import java.util.Scanner;
 
 public class RecursiveUsluSayiAlma {
-    static int us() {
-        Scanner inp = new Scanner(System.in);
-        System.out.println("Taban Girin: ");
-        int t = inp.nextInt();
-        System.out.println("Üs değer: ");
-        int u = inp.nextInt();
-        int result = 1;
-        for (int i = 1; i <= u; i++) {
-            result *= t;
+    static int power(int base  , int powerRaised) {
+        if (powerRaised != 0) {
+
+            // recursive call to power()
+            return (base * power(base,powerRaised-1));
+
         }
-        System.out.println("Cevap " + result);
-        return 0;
+        else {
+            return 1;
+        }
     }
 
     public static void main(String[] args) {
-        us();
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Taban: ");
+        int base=inp.nextInt();
+        System.out.print("Üs:");
+        int powerRaised=inp.nextInt();
+
+        int result = power(base, powerRaised);
+
+        System.out.println(base + "^" + powerRaised + "=" + result);
     }
 }
