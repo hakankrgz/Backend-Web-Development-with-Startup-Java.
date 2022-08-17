@@ -69,5 +69,4 @@ public class Student {
         System.out.println("Fizik Notu : " + this.fizik.note);
         System.out.println("Kimya Notu : " + this.kimya.note);
     }
-
 }
