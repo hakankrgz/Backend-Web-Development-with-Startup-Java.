@@ -1,34 +1,27 @@
 package Giris.OBS;
 
 public class Course {
-
-    Teacher courseTeacher;
+    Teacher teacher;
     String name;
     String code;
     String prefix;
     int note;
 
-    public Course(String name, String code, String prefix) {
+    Course(String name, String code, String prefix) {
         this.name = name;
         this.code = code;
         this.prefix = prefix;
-        this.note = 0;
+        int note = 0;
     }
-
-    public void addTeacher(Teacher t) {
-        if (this.prefix.equals(t.branch)) {
-            this.courseTeacher = t;
-            System.out.println("İşlem başarılı");
-        } else {
-            System.out.println(t.name + " Akademisyeni bu dersi veremez.");
+    void addTeacher(Teacher teacher){
+        if (teacher.branch.equals(this.prefix)){
+            this.teacher=teacher;
+        }else {
+            System.out.println("Öğretmen ve ders bölümleri uyuşmuyor!");
         }
     }
 
-    public void printTeacher() {
-        if (courseTeacher != null) {
-            System.out.println(this.name + " dersinin Akademisyeni : " + courseTeacher.name);
-        } else {
-            System.out.println(this.name + " dersine Akademisyen atanmamıştır.");
-        }
+    void printTeacher(){
+        this.teacher.print();
     }
 }
