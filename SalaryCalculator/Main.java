@@ -2,10 +2,12 @@ package Giris.SalaryCalculator;
 
 public class Main {
     public static void main(String[] args) {
-        CalisanClass Hakan = new CalisanClass("Hakan Karagöz", 4550, 46, 10);
+        CalisanClass Hakan = new CalisanClass("Hakan Karagöz", 24550, 46, 10);
         Hakan.printinfo();
-        CalisanClass Mustafa = new CalisanClass("Mustafa Karagöz", 5432, 30,13);
+        CalisanClass Mustafa = new CalisanClass("Mustafa Karagöz", 15432, 42,13);
         Mustafa.printinfo();
+        CalisanClass Yasemin= new CalisanClass("Yasemin Karagöz", 250454, 40,1);
+        Yasemin.printinfo();
     }
 
 }
