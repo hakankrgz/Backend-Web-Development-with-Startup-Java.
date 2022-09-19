@@ -2,7 +2,7 @@ package Giris.Giris;
 
 import java.util.Scanner;
 
-public class Baslangic {
+public class  Baslangic {
     public static void main(String[] args) {
         System.out.println("Merhaba Dünya");
 
