@@ -1,4 +1,4 @@
-package Giris.Giris;
+package Giris.Giris.MayinTarlasi;
 
 import java.util.Scanner;
 
